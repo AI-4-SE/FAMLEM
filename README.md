@@ -1,5 +1,5 @@
 # FAMLEM: FAst ModuLar Energy Meter at Code Level
-This repository contains instructions on how to build a fast component-level energy measurement setup for desktop machines, as well as source code to run and capture measurement data from it. For brevity, we call our system _FAMLEM_. This set-up was used in academic work by the authors as detailed below under (Citing)[citing]
+This repository contains instructions on how to build a fast component-level energy measurement setup for desktop machines, as well as source code to run and capture measurement data from it. For brevity, we call our system _FAMLEM_.
 
 ## Set-Up Overview
 FAMLEM measures power consumption of desktop machines on component level with over 1.6 kHz for a whole system and over 2.7 kHz for individual components. To do so, we interject the ATX power consumption of a system under measure (SUM) with instrumented ATX extension cables before each component of interest. 
@@ -11,7 +11,8 @@ FAMLEM can be built to measure any PC component that draws power from a cuttable
 FAMLEM becomes modular by instrumenting extension cables (and riser cards for ePCI and DDR4) instead of the original power wires.
 This way, FAMLEM can easily be installed and removed without residue.
 
-![Set-Up Overview](./doc/img/FAMLEM-overview.png)
+![Set-Up Overview](./doc/img/ffem-overview.png)
+
 
 
 ## Hardware
@@ -54,7 +55,7 @@ Hence we must find a shunt aka current sensing resistor of less or equal Ohmage 
 Let's assume we use a 15mOhm shunt resistor. With Ohm' Law (R = U / I --> I = U / R) that, given the 2.5µV step size of the INA226, we can measure current in steps of 16µA, which translates to 2mW at 12 V.
 Therefore, we have a measurement uncertainty of +/- 1mW, which is an error of  0.001% at the expected maximum power of 65W.
 
-![Measurement Uncertainty](./doc/img/FAMLEM-uncert.png)
+![Measurement Uncertainty](./doc/img/ffem-uncert.png)
 
 
 
@@ -126,3 +127,7 @@ In case you are not equipped to solder and crimp, you might also need the follow
 | SD Card 32 GB | 10€ | 1 |
 | Raspberry Pi Power Supply | 10€ | 1 |
 | Teensy Connection Micro USB Cable | 2€ | 1 |
+
+
+## Evaluation
+This setup was used in other work by the same authors [LINK](https://sws.informatik.uni-leipzig.de/wp-content/uploads/2023/01/icse23-Twins_or_False_Friends.pdf).
