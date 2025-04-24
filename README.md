@@ -130,4 +130,4 @@ In case you are not equipped to solder and crimp, you might also need the follow
 
 
 ## Evaluation
-This setup was used in other work by the same authors [LINK](https://sws.informatik.uni-leipzig.de/wp-content/uploads/2023/01/icse23-Twins_or_False_Friends.pdf).
+This setup was used in other work by the same authors [LINK](https://sws.informatik.uni-leipzig.de/wp-content/uploads/2023/01/icse23-Twins_or_False_Friends.pdf). Here you can find energy measurement data at the method-level, as well as evaluation scripts and results.
